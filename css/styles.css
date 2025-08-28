@@ -341,7 +341,7 @@ a {
 
 @media screen and (min-width: 1158px) {
     .hero {
-        width: 1440px;
+        width: 1158px;
         height: 600px;
         padding-top: 188px;
         padding-bottom: 188px;
@@ -356,29 +356,39 @@ a {
 /* section two */
 
 .section-feature {
-    padding: 96px 0;
     width: 288px;
     height: 696px;
 
 }
 
 .feature-list {
+    margin-top: 96px;
     display: flex;
-    align-items: flex-start;
-    justify-content: flex-start;
-    flex-direction: column;
+    flex-wrap: wrap;
     gap: 72px;
 }
-
-
-
 
 .container-icon {
     display: none;
 }
 
+.feature {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.1;
+    letter-spacing: 0.02em;
+    text-align: center;
+    color: #2e2f42;
+    margin-bottom: 8px;
+}
 
-
+.feature-title {
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    font-weight: 500;
+    font-size: 16px;
+    color: #434455;
+}
 
 
 @media screen and (min-width: 768px) {
@@ -386,27 +396,49 @@ a {
         width: 736px;
         height: 312px;
     }
-}
-
-
-
-@media screen and (min-width: 1158px) {
-    .section-feature {
-        padding: 120px 0;
-        width: 1128px;
-        height: 224px;
-    }
 
     .feature-list {
         gap: 24px;
     }
 
     .feature-list-item {
-        width: calc((100% - 72px) / 3);
+        width: calc((100% - 24px) / 2);
     }
 
+    .feature {
+        text-align: left;
+    }
+
+}
 
 
+
+@media screen and (min-width: 1158px) {
+    .section-feature {
+        width: 1128px;
+    }
+
+    .feature-list {
+        margin-top: 120px;
+        margin-bottom: 120px;
+        flex-wrap: nowrap;
+        gap: 24px;
+    }
+
+    .feature-list-item {
+        width: calc((100% - 24px) / 4);
+    }
+
+    .feature {
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 1.2;
+
+    }
+
+    .feature-title {
+        font-weight: 400;
+    }
 
     .container-icon {
         border: 1px solid #8e8f99;
@@ -419,3 +451,14 @@ a {
         margin-bottom: 8px;
     }
 }
+
+/* section three */
+
+.team-page {
+    background-color: #f4f4fd;
+    padding-top: 96px;
+    padding-bottom: 96px;
+}
+
+/* width: 320px;
+height: 2232px; */
