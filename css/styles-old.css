@@ -9,7 +9,6 @@
     color: #4d5ae5;
 }
 
-/* header contacts */
 
 .contacts {
     font-style: normal;
@@ -26,74 +25,7 @@
     transform: scale(1.1);
 } */
 
-/* footer */
 
-
-
-.footer-email-input {
-    margin-left: auto;
-}
-
-
-
-.email-input {
-    width: 453px;
-    height: 80px;
-    display: flex;
-    gap: 24px;
-}
-
-.form-input-email {
-    width: 264px;
-    height: 40px;
-    border: 1px;
-    border-radius: 4px;
-    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
-
-}
-
-.input-email-title {
-    width: 264px;
-    height: 40px;
-    border: 1px solid #ffffff;
-    background-color: transparent;
-    padding-left: 16px;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-    border-radius: 4px;
-    color: #ffffff;
-    font-weight: 400;
-    font-size: 12px;
-    line-height: 2;
-    letter-spacing: 0.04em;
-
-}
-
-
-
-.input-button {
-    border-radius: 4px;
-    padding: 8px 24px;
-    min-width: 165px;
-    height: 40px;
-    display: flex;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.5;
-    letter-spacing: 0.04em;
-    text-align: center;
-    cursor: pointer;
-    border: none;
-    color: #fff;
-    background-color: #4d5ae5;
-    align-items: center;
-    justify-content: center;
-    flex-direction: row;
-}
-
-.input-button-svg {
-    margin-left: 16px;
-    fill: #fff;
-}
 
 /* modal */
 

@@ -785,21 +785,9 @@ a {
 
 }
 
-
-
-/* 
-
-
- {
-    .logo-header-logo
-    display: inline-block;
-    
-}
-.media-container {}
- {
+.media-container {
     width: 208px;
-    margin-right: 56px;
-    margin-left: 56px;
+    height: 80px;
 }
 
 .footer-media-title {
@@ -809,6 +797,10 @@ a {
     letter-spacing: 0.02em;
     color: #fff;
     margin-bottom: 16px;
+
+    position: relative;
+    left: 50px;
+
 }
 
 .footer-list-icon {
@@ -860,15 +852,12 @@ a {
 }
 
 .footer-email-input {
-    margin-left: 16px;
-    margin-right: 16px;
     width: 288px;
     height: 136px;
 }
 
 .footer-input-title {
     margin-left: 122px;
-    margin-right: 123px;
     margin-bottom: 16px;
     font-weight: 500;
     font-size: 16px;
@@ -882,13 +871,6 @@ a {
     border-radius: 4px;
     width: 288px;
     height: 40px;
-}
-
-.form-input-email {
-    border: 1px;
-    border-radius: 4px;
-    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
-
 }
 
 .input-email-title {
@@ -908,18 +890,28 @@ a {
 
 }
 
+.form-input-email {
+    border: 1px;
+    border-radius: 4px;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+}
+
 .input-email-title::placeholder {
     color: #ffffff;
 }
 
 .input-button {
-    margin-right: 77px;
-    margin-left: 78px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    gap: 16px;
+
     border-radius: 4px;
     padding: 8px 24px;
-    min-width: 165px;
+    width: 165px;
     height: 40px;
-    display: flex;
+
     font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
@@ -937,7 +929,10 @@ a {
 .input-button-svg {
     margin-left: 16px;
     fill: #fff;
-} */
+
+}
+
+
 
 @media screen and (min-width: 768px) {
     .footer-container {
@@ -955,11 +950,36 @@ a {
         width: 115px;
         left: 0;
     }
+
+    .media-container {
+        margin-left: 24px;
+    }
+
+    .footer-media-title {
+        left: 0;
+    }
+
+    .footer-email-input {
+        width: 453px;
+        height: 80px;
+    }
+
+    .footer-input-title {
+        margin-left: 0px;
+    }
+
+    .email-input,
+    .input-email-title {
+        width: 264px;
+        height: 40px;
+        margin-bottom: 0;
+    }
+
+    .email-input {
+        display: flex;
+        gap: 24px;
+    }
 }
-
-
-
-
 
 @media screen and (min-width: 1158px) {
     .page-footer {
@@ -972,46 +992,11 @@ a {
 
     }
 
-
-
-}
-
-/*
-
-     {
-       
-        padding-left: 16px;
-        padding-right: 16px;
-        align-items: baseline;
-    }
-
-    .footer-logo {
-        width: 264px;
-        height: 112px;
-        margin-right: 24px;
-        margin-left: 108px;
-    }
-
-    .logo-header-logo {
-        width: 115px;
-        height: 24px;
-    }
-
-} */
-
-
-/*  
-
-    
- align-items: baseline;
-    .footer-logo {
-        margin-right: 120px;
-    }
-
     .media-container {
-        width: 208px;
-        height: 80px;
+        margin-left: 120px;
     }
 
-
-} */
+    .footer-email-input {
+        margin-left: auto;
+    }
+}
