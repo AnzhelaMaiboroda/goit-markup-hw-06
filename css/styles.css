@@ -785,6 +785,8 @@ a {
 
 }
 
+
+
 /* 
 
 
@@ -793,8 +795,8 @@ a {
     display: inline-block;
     
 }
-
-.media-container {
+.media-container {}
+ {
     width: 208px;
     margin-right: 56px;
     margin-left: 56px;
